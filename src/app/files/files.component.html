@@ -1,0 +1,19 @@
+<div class="card mt-4">
+  <div class="card-header">
+    Generated Files |
+    No of files <span class="badge badge-primary">{{ files.length }}</span>
+    |
+    <i>[Locate files at "server/uploads" folder]</i>
+
+  </div>
+  <div class="">
+    <ul class="list-group">
+      <li *ngFor="let file of files" class="list-group-item" (click)="clicked()">
+        <div class="d-flex justify-content-between">
+          <span>{{ file }}</span>
+          <a (click)="clicked(file)" class="btn btn-link">[Download]</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

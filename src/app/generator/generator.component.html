@@ -1,0 +1,20 @@
+<div class="card ">
+  <div class="card-header">
+    File Generator
+  </div>
+  <div class="card-body">
+    <form [formGroup]="form">
+      <div class="form-group">
+        <label for="url">Enter URL</label>
+        <input formControlName="url" type="url" class="form-control" id="url" aria-describedby="emailHelp">
+        <small id="urlHelp" class="form-text text-muted">example: http://www.google.com</small>
+      </div>
+      <div class="d-flex justify-content-end">
+        <button type="submit" (click)="submit('pdf')" class="btn btn-primary ml-3" [disabled]="loading">
+          <span *ngIf="loading">Loading...</span>
+          <span *ngIf="!loading">Generate PDF</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,300;1,300&display=swap');
+
+$font-family-sans-serif: 'IBM Plex Sans', sans-serif;
+$font-family-monospace : 'IBM Plex Sans', sans-serif;
+$font-family-base      : 'IBM Plex Sans', sans-serif;
+
+$font-size-base: 1.1rem;
+
+$border-radius   : 0;
+$border-radius   : 0 !default;
+$border-radius-lg: 0 !default;
+$border-radius-sm: 0 !default;
+
+@import "~bootstrap/scss/bootstrap";
+
+html,
+body {
+  background-color: $gray-300;
+}
+
+.card {
+  &-header {
+    background-color: $white;
+  }
+}
